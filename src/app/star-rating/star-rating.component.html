@@ -1,0 +1,9 @@
+<section class="star-rating">
+  <!-- <em class="star-rating__star-empty"></em> -->
+  <div *ngFor="let star of starList;"
+    (click)="onStarClick($event, star)">
+    <i class="fa fa-star" 
+    [ngClass]="star.className" 
+    [ngStyle]="starStyles"></i>
+  </div>
+</section>
